@@ -1,0 +1,43 @@
+/* Large Screen Styles - Applied after mobile-first base */
+
+/* Desktop Navigation - Show full menu */
+@media (min-width: 769px) {
+    nav ul.nav-menu {
+        display: flex !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: none !important;
+        position: static !important;
+        flex-direction: row !important;
+        background-color: transparent !important;
+        box-shadow: none !important;
+        min-width: auto !important;
+    }
+
+    .hamburger-menu {
+        display: none !important;
+    }
+}
+
+/* Desktop Grid Layout - 3 columns */
+@media (min-width: 769px) {
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* Alternative: Using auto-fit and minmax for more flexible responsive design */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .temple-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+/* Large desktop - ensure 3 columns */
+@media (min-width: 1025px) {
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
