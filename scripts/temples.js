@@ -1,45 +1,3 @@
-// Array of temple data with name and image URL
-const temples = [
-    { name: "Templo Columbia River, Washington", url: "https://www.churchofjesuschrist.org/imgs/a4b69ff6daf25c70235e2823612a01872a7b2abc/full/500%2C/0/default" },
-    { name: "Abidjan Ivory Coast Temple", url: "https://www.churchofjesuschrist.org/imgs/bal80d1i45vz2eluh67xvxs09ep6p2m1lfv69t0q/full/500%2C/0/default" },
-    { name: "Accra Ghana Temple", url: "https://www.churchofjesuschrist.org/imgs/7cf8e8b9e5a5a1f379d4e2c9bc2166f9c6007aca/full/500%2C/0/default" },
-
-];
-
-// Function to create temple figure elements dynamically
-function createTempleFigures() {
-    const templeGrid = document.getElementById("temple-grid");
-    
-    if (!templeGrid) {
-        return;
-    }
-    
-    // Clear any existing content
-    templeGrid.innerHTML = "";
-    
-    // Loop through temples array and create figure elements
-    temples.forEach(temple => {
-        // Create figure element
-        const figure = document.createElement("figure");
-        
-        // Create image element
-        const img = document.createElement("img");
-        img.src = temple.url;
-        img.alt = `${temple.name} Temple`;
-        
-        // Create figcaption element
-        const figcaption = document.createElement("figcaption");
-        figcaption.textContent = temple.name;
-        
-        // Append image and figcaption to figure
-        figure.appendChild(img);
-        figure.appendChild(figcaption);
-        
-        // Append figure to grid
-        templeGrid.appendChild(figure);
-    });
-}
-
 // Get the current year and populate the copyright year span
 const currentYear = new Date().getFullYear();
 document.getElementById("currentyear").textContent = currentYear;
@@ -54,11 +12,8 @@ const minutes = String(lastModified.getMinutes()).padStart(2, '0');
 const seconds = String(lastModified.getSeconds()).padStart(2, '0');
 document.getElementById("lastModified").innerHTML = `Last Modification: ${month}/${day}/${year} ${hours}:${minutes}:${seconds}`;
 
-// Hamburger menu toggle functionality and temple figure creation
+// Hamburger menu toggle functionality
 document.addEventListener('DOMContentLoaded', function() {
-    // Create temple figures dynamically
-    createTempleFigures();
-    
     const hamburgerMenu = document.getElementById('hamburger-menu');
     const navMenu = document.getElementById('nav-menu');
     const nav = document.querySelector('nav');
