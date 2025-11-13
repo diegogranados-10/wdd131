@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caracas, Venezuela - Place Information</title>
+    <meta name="description" content="Information about Caracas, Venezuela including data, weather, and local attractions">
+    <meta name="author" content="Diego Andres Granados">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Caracas, Venezuela</h1>
+    </header>
+
+    <main>
+        <div class="content-wrapper">
+            <section class="data-section">
+                <h2>Data</h2>
+                <dl>
+                    <dt>Country:</dt>
+                    <dd>Venezuela</dd>
+                    <dt>Population:</dt>
+                    <dd>2,245,744</dd>
+                    <dt>Language:</dt>
+                    <dd>Spanish</dd>
+                    <dt>Currency:</dt>
+                    <dd>Bolívar (VES)</dd>
+                    <dt>Time Zone:</dt>
+                    <dd>VET (UTC-4)</dd>
+                    <dt>Area:</dt>
+                    <dd>433 km²</dd>
+                </dl>
+            </section>
+
+            <section class="hero-section">
+                <picture>
+                    <source 
+                        media="(min-width: 768px)" 
+                        srcset="images/caracas-hero-large.webp 1200w,
+                                images/caracas-hero-medium.webp 800w"
+                        sizes="(min-width: 1200px) 1200px, 800px">
+                    <source 
+                        srcset="images/caracas-hero-small.webp 600w,
+                                images/caracas-hero-tiny.webp 400w"
+                        sizes="100vw">
+                    <img 
+                        src="images/caracas-hero-small.webp" 
+                        alt="View of Caracas, Venezuela with mountains in the background"
+                        loading="lazy">
+                </picture>
+            </section>
+
+            <section class="weather-section">
+                <h2>Weather</h2>
+                <div class="weather-icon-mobile">
+                    <img src="images/weather-icon.svg" alt="Weather icon" class="weather-svg">
+                </div>
+                <dl>
+                    <dt>Temperature:</dt>
+                    <dd><span id="temperature">75</span>°F</dd>
+                    <dt>Condition:</dt>
+                    <dd>Partly Cloudy</dd>
+                    <dt>Wind Speed:</dt>
+                    <dd><span id="windSpeed">5</span> mph</dd>
+                    <dt>Wind Chill:</dt>
+                    <dd><span id="windChill">N/A</span></dd>
+                </dl>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Diego Andres Granados | Caracas, Venezuela</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
+
