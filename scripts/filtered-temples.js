@@ -55,7 +55,86 @@ const temples = [
       imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
-    // Add more temple objects here...
+    {
+      templeName: "Salt Lake",
+      location: "Salt Lake City, Utah, United States",
+      dedicated: "1893, April, 6",
+      area: 382207,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/400x250/salt-lake-temple-37762.jpg"
+    },
+    {
+      templeName: "San Diego California",
+      location: "San Diego, California, United States",
+      dedicated: "1993, April, 25",
+      area: 72000,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/san-diego-california/400x250/san-diego-temple-702653-wallpaper.jpg"
+    },
+    {
+      templeName: "Orlando Florida",
+      location: "Orlando, Florida, United States",
+      dedicated: "1994, October, 9",
+      area: 70000,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/orlando-florida/400x250/orlando-florida-temple-lds-background-702675.jpg"
+    },
+    {
+      templeName: "Tokyo Japan",
+      location: "Tokyo, Japan",
+      dedicated: "1980, October, 27",
+      area: 53997,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/tokyo-japan/400x250/tokyo-japan-temple-lds-702694-wallpaper.jpg"
+    },
+    {
+      templeName: "Rome Italy",
+      location: "Rome, Italy",
+      dedicated: "2019, March, 10",
+      area: 41010,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/2019/400x250/5-Rome-Temple-2160340.jpg"
+    },
+    {
+      templeName: "Paris France",
+      location: "Le Chesnay, France",
+      dedicated: "2017, May, 21",
+      area: 44175,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/paris-france/400x250/paris-france-temple-exterior4.jpg"
+    },
+    {
+      templeName: "Sydney Australia",
+      location: "Sydney, Australia",
+      dedicated: "1984, September, 20",
+      area: 30067,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sydney-australia/400x250/sydney-australia-temple-lds-1027503-wallpaper.jpg"
+    },
+    {
+      templeName: "Hong Kong China",
+      location: "Hong Kong, China",
+      dedicated: "1996, May, 26",
+      area: 51921,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/hong-kong-china/400x250/hong-kong-china-temple-lds-85197-wallpaper.jpg"
+    },
+    {
+      templeName: "Bountiful Utah",
+      location: "Bountiful, Utah, United States",
+      dedicated: "1995, January, 8",
+      area: 104000,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/bountiful-utah/400x250/bountiful-temple-766633-wallpaper.jpg"
+    },
+    {
+      templeName: "Portland Oregon",
+      location: "Lake Oswego, Oregon, United States",
+      dedicated: "1989, August, 19",
+      area: 80500,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/portland-oregon/400x250/portland-oregon-temple-lds-702692-wallpaper.jpg"
+    }
   ];
 
 // Function to extract year from dedication date string
