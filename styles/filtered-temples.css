@@ -1,0 +1,257 @@
+/* CSS Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background-color: #6B2C91;
+    color: white;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Navigation Styles */
+nav {
+    position: relative;
+}
+
+nav ul.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Hamburger menu button */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hamburger-line {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.hamburger-menu.active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger-menu.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
+}
+
+/* Main Content Styles */
+main {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    flex: 1;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #000;
+}
+
+/* Temple Grid - Mobile First (1 column) */
+.temple-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.temple-grid figure {
+    margin: 0;
+    padding: 0;
+}
+
+.temple-grid figure img {
+    width: 100%;
+    height: 300px;
+    display: block;
+    border-radius: 4px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.temple-grid figure figcaption {
+    text-align: center;
+    margin-top: 0.5rem;
+    color: #6B2C91;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.8;
+}
+
+.temple-grid figure figcaption strong {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    color: #6B2C91;
+}
+
+.temple-grid figure figcaption .temple-location,
+.temple-grid figure figcaption .temple-dedicated,
+.temple-grid figure figcaption .temple-area {
+    display: block;
+    font-size: 0.9rem;
+    color: #333;
+    margin-top: 0.2rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #6B2C91;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+#lastModified {
+    font-size: 0.9rem;
+}
+
+/* Mobile Navigation Styles */
+@media (max-width: 768px) {
+    header {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Show hamburger menu button */
+    .hamburger-menu {
+        display: flex;
+    }
+
+    /* Hide navigation menu by default on mobile */
+    nav ul.nav-menu {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #6B2C91;
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+        min-width: 200px;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 5;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Show navigation menu when active */
+    nav ul.nav-menu.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    nav ul li {
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+
+    nav ul li a {
+        padding: 1rem;
+        display: block;
+        text-align: left;
+        border-radius: 0;
+    }
+
+    nav ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    main {
+        padding: 1.5rem 1rem;
+    }
+
+    main h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .temple-grid {
+        gap: 1.5rem;
+    }
+}
+
