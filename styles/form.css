@@ -1,0 +1,312 @@
+/* Form Section Styles */
+.form-section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    grid-column: 1 / -1;
+}
+
+.form-section h2 {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: -2rem -2rem 1.5rem -2rem;
+    border-radius: 8px 8px 0 0;
+}
+
+.form-section > p {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+fieldset {
+    border: 2px solid #1e3a5f;
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin: 0;
+}
+
+legend {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1e3a5f;
+    padding: 0 0.75rem;
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.required {
+    color: #d32f2f;
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #1e3a5f;
+    box-shadow: 0 0 0 3px rgba(30, 58, 95, 0.1);
+}
+
+select {
+    cursor: pointer;
+    background-color: white;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Rating Group Styles */
+.rating-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.rating-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: normal;
+}
+
+.rating-label:hover {
+    background-color: #f5f5f5;
+    border-color: #1e3a5f;
+}
+
+.rating-label input[type="radio"] {
+    width: auto;
+    margin: 0;
+    cursor: pointer;
+}
+
+.rating-label input[type="radio"]:checked + .star {
+    color: #ffa500;
+}
+
+.star {
+    font-size: 1.2rem;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.rating-label input[type="radio"]:checked ~ span.star,
+.rating-label:has(input[type="radio"]:checked) .star {
+    color: #ffa500;
+}
+
+/* Checkbox Group Styles */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-weight: normal;
+}
+
+.checkbox-label:hover {
+    background-color: #f5f5f5;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* Form Actions */
+.form-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.submit-btn {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #2d4f7a;
+}
+
+.submit-btn:active {
+    background-color: #15304a;
+}
+
+.submit-btn {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Review Summary Styles */
+.review-summary {
+    background-color: #f8f9fa;
+    border: 2px solid #1e3a5f;
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+
+.review-summary h3 {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1.3rem;
+    color: #1e3a5f;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.review-summary dl {
+    margin: 0;
+}
+
+.review-summary dt {
+    font-weight: 700;
+    color: #333;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.review-summary dt:first-child {
+    margin-top: 0;
+}
+
+.review-summary dd {
+    margin: 0 0 0.5rem 1.5rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.review-counter {
+    text-align: center;
+    padding: 1rem;
+    background-color: #e8f4f8;
+    border-radius: 6px;
+    margin: 1.5rem 0;
+}
+
+.review-counter p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #1e3a5f;
+}
+
+.review-counter strong {
+    font-size: 1.3rem;
+    color: #1e3a5f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-section {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    .form-section h2 {
+        margin: -1.5rem -1.5rem 1.5rem -1.5rem;
+        font-size: 1.3rem;
+        padding: 0.875rem;
+    }
+
+    fieldset {
+        padding: 1rem;
+    }
+
+    .rating-group {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .rating-label {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+}

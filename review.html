@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Diego Andres Granados</title>
+    <meta name="description" content="Review confirmation page for product review form.">
+    <meta name="author" content="Diego Andres Granados">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/review.js" defer></script>
+</head>
+<body>
+    <header>
+        <span id="course-title">WDD 131: Dynamic Web Fundamentals - <span id="student-name">Diego Andres Granados</span></span>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="place.html">Place</a>
+            <a href="form.html">Form</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Review Submitted</h1>
+        <section class="form-section">
+            <h2>Thank You!</h2>
+            <p>Your product review has been successfully submitted.</p>
+            
+            <div class="review-summary">
+                <h3>Review Summary</h3>
+                <div id="reviewDetails"></div>
+            </div>
+
+            <div class="review-counter">
+                <p>Total reviews submitted: <strong id="reviewCount">0</strong></p>
+            </div>
+
+            <div class="form-actions">
+                <a href="form.html" class="submit-btn">Submit Another Review</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Diego Andres Granados 🌸 Venezuela</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
